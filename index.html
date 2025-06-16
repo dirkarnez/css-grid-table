@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .grid-table {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        .grid-table-header {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+        .grid-table-row {
+            border-bottom: 1px solid #ccc;
+        }
+        .grid-table-cell {
+            padding: 10px;
+        }
+        .grid-table-row:last-child {
+            border-bottom: none; /* Remove bottom border for the last row */
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-table">
+    <div class="grid-table-header">Header 1</div>
+    <div class="grid-table-header">Header 2</div>
+    <div class="grid-table-header">Header 3</div>
+
+    <div class="grid-table-row grid-table-cell">Row 1, Cell 1</div>
+    <div class="grid-table-row grid-table-cell">Row 1, Cell 2 and this is very, very, very, very, very long</div>
+    <div class="grid-table-row grid-table-cell">Row 1, Cell 3</div>
+
+    <div class="grid-table-row grid-table-cell">Row 2, Cell 1</div>
+    <div class="grid-table-row grid-table-cell">Row 2, Cell 2</div>
+    <div class="grid-table-row grid-table-cell">Row 2, Cell 3</div>
+
+    <div class="grid-table-row grid-table-cell">Row 3, Cell 1</div>
+    <div class="grid-table-row grid-table-cell">Row 3, Cell 2</div>
+    <div class="grid-table-row grid-table-cell">Row 3, Cell 3</div>
+</div>
+
+</body>
+</html>
