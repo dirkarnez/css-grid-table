@@ -43,6 +43,15 @@
             border-bottom: none; /* Remove bottom border for the last row */
         }
     </style>
+    <script>
+        // Create the query list.
+        const mediaQueryList = window.matchMedia("screen and (max-width: 768px)");
+        
+        // Add the callback function as a listener to the query list.
+        mediaQueryList.addEventListener("change", function () {
+            console.log("hid")
+        });
+    </script>
 </head>
 <body>
 
