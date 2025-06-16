@@ -4,3 +4,4 @@
 
 ### TODOs
 - in mobile mode set to `grid-template-columns: repeat(2, 1fr);`, with each row rendered as cards (clone headers)
+  - minimize dom creation / destruction
